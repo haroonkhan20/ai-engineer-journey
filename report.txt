@@ -1,0 +1,6 @@
+Student Report
+==============================
+Name    : Pooja
+Scores  : [90.0, 98.0, 99.0, 90.0, 97.0, 96.0]
+Average : 95.00
+Grade   : A+

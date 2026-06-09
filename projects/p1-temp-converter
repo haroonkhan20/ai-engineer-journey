@@ -1,0 +1,35 @@
+#project 1 - Temperature Converter
+
+def celsius_to_fahrenheit(c):
+    return (c * 9/5) + 32
+
+def celsius_to_kelvin(c):
+    return c + 273.15
+
+def fahrenheit_to_celsius(f):
+    return (f - 32) * 5/9
+
+# ------MAIN PROGRAM-------------
+def main():
+    print("=" * 35)
+    print("   Temperature Converter")
+    print("=" * 35)
+
+    temp = float(input("Enter temperature: "))
+    unit = input("Unit (c / F): ").strip().upper()
+
+    if unit == "C":
+        f = celsius_to_fahrenheit(temp)
+        k = celsius_to_kelvin(temp)
+        print(f"\n {temp}°C = {f: .2f}°F  =  {k:.2f}K")
+
+    elif unit == "F":
+        c = fahrenheit_to_celsius(temp)
+        k = celsius_to_kelvin(temp)
+        print(f"\n {temp}°F = {c:.2f}°C  =  {k:.2f}K")
+
+    else:
+        print("Invalid unit. Use C or F.")
+
+if __name__ == "__main__":
+    main()
